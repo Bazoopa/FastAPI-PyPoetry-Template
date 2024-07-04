@@ -39,3 +39,9 @@ https://example.com/items/foo
 ...the path would be:
 
 /items/foo
+
+# Python Poetry useful stuff:
+
+poetry add ...
+
+
