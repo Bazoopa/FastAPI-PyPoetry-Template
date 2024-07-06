@@ -1,16 +1,18 @@
-# This is a sample Python script.
+import logging
+from fastapi import FastAPI
+from myApp.controllers import ChatController
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Configure logging settings (optional)
+logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
+
+app = FastAPI(debug=True)
+
+# Example of including a router
+app.include_router(ChatController.router, prefix="/api/v1")
+
+logging.info("Starting server...")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+@app.get("/")
+async def root():
+    return {"message": "Hello Bigger Applications!"}

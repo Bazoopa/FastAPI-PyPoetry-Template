@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="">
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Small changes for branching">
+      <change afterPath="$PROJECT_DIR$/DigiCertGlobalRootCA.crt.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastAPI-Learning/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastAPI-Learning/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastAPI-Learning/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastAPI-Learning/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fastAPI-Learning/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DAOs/ChatDAO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DAOs/MessageDAO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DAOs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DTOs/ChatDTO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DTOs/MessageDTO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/DTOs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/Services/ChatService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/Services/MessageService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/Services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/controllers/ChatController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/controllers/MessageController.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/controllers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FastAPI-PyPoetry-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FastAPI-PyPoetry-Template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Bazoopa/FastAPI-PyPoetry-Template.git",
-    "accountId": "fe4355a9-0580-4a2a-81ee-2989e0d99d50"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Bazoopa&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Bazoopa/FastAPI-PyPoetry-Template.git&quot;,
+    &quot;accountId&quot;: &quot;fe4355a9-0580-4a2a-81ee-2989e0d99d50&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -29,18 +76,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;b1-installing-dependencies&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\Services" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\DTOs" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\DAOs" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\fastAPI-Learning" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FastAPI-PyPoetry-Template" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,9 +112,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Poetry (pyPoetryTest)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FastAPI-PyPoetry-Template" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -63,6 +147,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="FastAPI-PyPoetry-Template" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Poetry (FastAPI-PyPoetry-Template)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\fastAPI-Learning\main2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main2" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -80,20 +198,20 @@
       <option name="presentableId" value="Default" />
       <updated>1720128261782</updated>
     </task>
+    <task id="LOCAL-00001" summary="Small changes for branching">
+      <option name="closed" value="true" />
+      <created>1720128907467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720128907467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Small changes for branching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small changes for branching" />
   </component>
 </project>
