@@ -3,10 +3,8 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from myApp.database import get_db, engine  # Adjust import as needed
-from myApp.endpoints.message.model import MessageModel
-from myApp.endpoints.message.schema import MessageSchema
-from myApp.endpoints.message.service import MessageService
+from database import get_db, engine  # Adjust import as needed
+from endpoints.message import MessageModel, MessageSchema, MessageService
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level

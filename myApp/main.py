@@ -1,7 +1,7 @@
 import logging
 from fastapi import FastAPI
-from myApp.endpoints.chat.controller import ChatController
-from myApp.endpoints.message.controller import MessageController
+from endpoints.chat import ChatController
+from endpoints.message import MessageController
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level

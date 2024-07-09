@@ -1,0 +1,5 @@
+# Ignore .env files
+/myapp/*.env
+
+# Ignore logs directory
+logs/

@@ -1,9 +1,9 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
 
-from myApp.endpoints.message.model.MessageModel import Message
+from endpoints.message.MessageModel import Message
 
-from myApp.endpoints.message.schema import MessageSchema
+from endpoints.message import MessageSchema
 
 
 # todo: add error handling.

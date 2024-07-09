@@ -1,8 +1,7 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
 
-from myApp.endpoints.chat.model import ChatModel
-from myApp.endpoints.chat.schema import ChatSchema
+from endpoints.chat import ChatModel, ChatSchema
 
 
 # Get single chat (by ID!)
