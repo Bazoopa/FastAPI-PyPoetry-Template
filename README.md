@@ -15,6 +15,10 @@ Current setup:
 # Useful commands - For my own reference:
 To start the main.py server:
  - uvicorn main:app --reload
+Get PID
+ - tasklist
+kill PID
+ - taskkill /f /PID {pid}
 
 # API endpoint URL:
  - http://localhost:8000/api/v1/

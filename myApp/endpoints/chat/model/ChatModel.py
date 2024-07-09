@@ -8,4 +8,6 @@ class Chat(Base):
     __tablename__ = "chats"
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, unique=True, index=True)
+
+    messages = relationship("Message", back_populates="chat")

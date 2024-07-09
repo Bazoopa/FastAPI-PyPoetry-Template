@@ -13,6 +13,10 @@ class ChatCreate(ChatBase):
     pass
 
 
+class ChatUpdate(ChatBase):
+    pass
+
+
 class Chat(ChatBase):
     id: int
 
