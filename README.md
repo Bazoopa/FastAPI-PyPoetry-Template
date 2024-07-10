@@ -100,3 +100,9 @@ schemas.py acts like a DTO?
 - When that works, create a log in system for it
 - When that works, create the same but for a to-do list
 - When that works, create a calendar system
+
+
+# React:
+useful commands:
+npm start - starts the service
+
