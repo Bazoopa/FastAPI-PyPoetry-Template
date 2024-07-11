@@ -1,5 +1,5 @@
 import logging
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
@@ -17,8 +17,7 @@ class ChatUpdate(ChatBase):
     pass
 
 
-class Chat(ChatBase):
+class DBChat(ChatBase):
     id: int
 
-    class Config:
-        from_attributes = True  # Updated for Pydantic v2 and later
+    model_config = ConfigDict(from_attributes=True)  # Updated for Pydantic v2 and later

@@ -6,8 +6,6 @@ from endpoints.message.MessageModel import Message
 from endpoints.message import MessageSchema
 
 
-# todo: add error handling.
-
 def get_message(db: Session, message_id: int):
     message = db.query(Message).filter(Message.id == message_id).first()
     if not message:
