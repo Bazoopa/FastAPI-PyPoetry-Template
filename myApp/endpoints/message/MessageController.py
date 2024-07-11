@@ -10,7 +10,6 @@ from endpoints.message import MessageModel, MessageSchema, MessageService
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
 
 # Create database tables if they do not exist
-MessageModel.Base.metadata.create_all(bind=engine)
 
 router = APIRouter()
 

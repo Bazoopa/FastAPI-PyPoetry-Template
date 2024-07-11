@@ -1,8 +1,9 @@
 import logging
 import mysql.connector
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base  # Updated import
+from sqlalchemy.orm import sessionmaker, declarative_base, DeclarativeBase  # Updated import
 from settings import SQLALCHEMY_DATABASE_URL, DATABASE
+from endpoints.base import Base
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -30,8 +31,8 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
 # Create a sessionmaker to interact with the database
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
+
 # Declare a base class for ORM models
-Base = declarative_base()
 
 
 # Dependency to provide a database session

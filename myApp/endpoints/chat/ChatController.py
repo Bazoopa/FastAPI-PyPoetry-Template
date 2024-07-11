@@ -9,8 +9,6 @@ from endpoints.chat import ChatModel, ChatSchema, ChatService
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
 
-ChatModel.Base.metadata.create_all(bind=engine)
-
 router = APIRouter()
 
 
