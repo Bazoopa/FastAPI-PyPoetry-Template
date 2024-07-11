@@ -1,9 +1,30 @@
 # FastAPI-Template
 A template for other FastAPI projects so I can create new projects quickly.
 
+This template will just have a database and endpoints that can be accessed by a client like
+postman
+
+# Design
+
+Current setup:
+ - Controllers, end point for API calls
+ - Services, the business logic for the controllers
+ - DAOs, Interacts with the database and returns data structures for service layer
+ - DTOs, Service layer transforms domain objects into DTOs for presentation or transfer
+
 # Useful commands - For my own reference:
 To start the main.py server:
  - uvicorn main:app --reload
+Get PID
+ - tasklist
+kill PID
+ - taskkill /f /PID {pid}
+
+# API endpoint URL:
+ - http://localhost:8000/api/v1/
+
+# How to not push SQL Username and Password to git:
+ - Make the password an environment variable?
 
 To get the interactive API documentation (faster than postman):
  -  http://127.0.0.1:8000/docs
@@ -42,6 +63,46 @@ https://example.com/items/foo
 
 # Python Poetry useful stuff:
 
-poetry add ...
+Add a dependency:
+ - poetry add ...
 
+install dependencies:
+ - poetry install
+
+Get Python environment information:
+ - poetry env info
+
+
+
+# List of Dependencies:
+
+- FastAPi
+- Uvicorn
+- 
+
+
+# Useful Pages:
+
+Async:
+https://fastapi.tiangolo.com/async/
+
+
+# Current setup (delete this later)
+crud.py acts like a service layer
+database.py connects to the DB
+main.py acts as a controller
+models.py acts like a model
+schemas.py acts like a DTO?
+
+
+# Current plan:
+- Build an open chat system, get it working, and host it with docker (this is essentially the template)
+- When that works, create a log in system for it
+- When that works, create the same but for a to-do list
+- When that works, create a calendar system
+
+
+# React:
+useful commands:
+npm start - starts the service
 
