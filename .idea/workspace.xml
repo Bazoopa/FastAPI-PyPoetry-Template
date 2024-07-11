@@ -4,46 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Adding tests">
-      <change afterPath="$PROJECT_DIR$/myApp/endpoints/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myApp/test_database.py" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/endpoints/chat/ChatController.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/endpoints/chat/ChatController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/endpoints/chat/ChatModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/endpoints/chat/ChatModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/endpoints/message/MessageController.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/endpoints/message/MessageController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/endpoints/message/MessageModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/endpoints/message/MessageModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/tests/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/test_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Unit Test" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="b1-installing-dependencies" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Bazoopa&quot;
-  }
-}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Bazoopa/FastAPI-PyPoetry-Template.git&quot;,
@@ -64,55 +35,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test.test_root.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;b9-testing-unit&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template/myApp/tests/endpoints/message&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\endpoints\message" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\Services" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\DTOs" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\DAOs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\endpoints\message\" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\endpoints\chat\" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp" />
-      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\endpoints\chat" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_main.test_root">
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FastAPI-PyPoetry-Template" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="FastAPI-PyPoetry-Template" />
       <option name="ENV_FILES" value="" />
@@ -120,11 +50,11 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYTHONPATH" value="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Poetry (pyPoetryTest)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
@@ -136,56 +66,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="FastAPI-PyPoetry-Template" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Poetry (FastAPI-PyPoetry-Template)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\fastAPI-Learning\main2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_main.test_root" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="FastAPI-PyPoetry-Template" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myApp/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_main.test_root&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.main2" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python tests.Python tests for tests.test_main.test_root" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests for tests.test_main.test_root" />
-        <item itemvalue="Python.main (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -203,94 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1720128261782</updated>
     </task>
-    <task id="LOCAL-00001" summary="Small changes for branching">
-      <option name="closed" value="true" />
-      <created>1720128907467</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1720128907467</updated>
-    </task>
-    <task id="LOCAL-00002" summary="A working template without a front end. Now that I know everything is more or less working I'm going to restructure the project so I can push to git without revealing my mySQL password">
-      <option name="closed" value="true" />
-      <created>1720532764909</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1720532764909</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Changed the project structure">
-      <option name="closed" value="true" />
-      <created>1720539548804</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1720539548804</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding tests">
-      <option name="closed" value="true" />
-      <created>1720542137909</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1720542137909</updated>
-    </task>
-    <task id="LOCAL-00005" summary="reverting some changes">
-      <option name="closed" value="true" />
-      <created>1720714688836</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1720714688836</updated>
-    </task>
-    <task id="LOCAL-00006" summary="reverting some changes">
-      <option name="closed" value="true" />
-      <created>1720714926810</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1720714926810</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Small changes for branching" />
-    <MESSAGE value="Adding files used for practicing. Not worked very well so I will attempt another way." />
-    <MESSAGE value="A working template" />
-    <MESSAGE value="A working template without a front end. Now that I know everything is more or less working I'm going to restructure the project so I can push to git without revealing my mySQL password" />
-    <MESSAGE value="Changed the project structure" />
-    <MESSAGE value="Adding tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tests" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myApp/endpoints/chat/ChatSchema.py</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myApp/database.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
