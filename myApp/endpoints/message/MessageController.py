@@ -4,7 +4,8 @@ from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
 from database import get_db  # Adjust import as needed
-from endpoints.message import MessageSchema, MessageService
+from endpoints.message import MessageService
+from endpoints.message.MessageService import MessageCreate, Message
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
@@ -15,22 +16,22 @@ router = APIRouter()
 
 
 # Example of using get_db()
-@router.get("/message/{message_id}", response_model=MessageSchema.Message, tags=["Message"])
+@router.get("/message/{message_id}", response_model=Message, tags=["Message"])
 def get_message(message_id: int, db: Session = Depends(get_db)):
     return MessageService.get_message(db, message_id=message_id)
 
 
-@router.get("/messages/{chat_id}", response_model=list[MessageSchema.Message], tags=["Message"])
+@router.get("/messages/{chat_id}", response_model=list[Message], tags=["Message"])
 def get_messages(chat_id: int, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     return MessageService.get_all_messages_from_chat(db, chat_id, skip=skip, limit=limit)
 
 
-@router.post("/message/", response_model=MessageSchema.Message, tags=["Message"])
-def create_message(message: MessageSchema.MessageCreate, db: Session = Depends(get_db)):
+@router.post("/message/", response_model=Message, tags=["Message"])
+def create_message(message: MessageCreate, db: Session = Depends(get_db)):
     return MessageService.create_message(db=db, message=message)
 
 
-@router.delete("/message/{message_id}", response_model=MessageSchema.Message, tags=["Message"])
+@router.delete("/message/{message_id}", response_model=Message, tags=["Message"])
 def delete_message(message_id: int, db: Session = Depends(get_db)):
     return MessageService.delete_message_by_id(db=db, message_id=message_id)
 
