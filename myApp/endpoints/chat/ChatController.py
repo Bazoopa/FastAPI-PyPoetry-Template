@@ -3,13 +3,11 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from database import get_db, engine
-from endpoints.chat import ChatModel, ChatSchema, ChatService
+from database import get_db
+from endpoints.chat import ChatSchema, ChatService
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
-
-ChatModel.Base.metadata.create_all(bind=engine)
 
 router = APIRouter()
 
@@ -29,6 +27,7 @@ def getChats(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
 # Create a chat
 @router.post("/chat/", response_model=ChatSchema.Chat, tags=["Chat"])
 def create_chat(chat: ChatSchema.ChatCreate, db: Session = Depends(get_db)):
+    print("small test")
     return ChatService.create_chat(db=db, chat=chat)
 
 

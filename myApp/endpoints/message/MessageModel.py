@@ -1,6 +1,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
-from database import Base
+from sqlalchemy.orm import relationship, DeclarativeBase
+
+from endpoints.Base import Base
 
 
 class Message(Base):
@@ -12,3 +13,6 @@ class Message(Base):
     chat_id = Column(Integer, ForeignKey('chats.id', ondelete='CASCADE'), nullable=False)
 
     chat = relationship("Chat", back_populates="messages")
+
+
+

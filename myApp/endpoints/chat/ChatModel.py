@@ -1,7 +1,7 @@
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, DeclarativeBase
 
-from database import Base
+from endpoints.Base import Base
 
 
 class Chat(Base):
@@ -11,3 +11,5 @@ class Chat(Base):
     name = Column(String, unique=True, index=True)
 
     messages = relationship("Message", back_populates="chat")
+
+

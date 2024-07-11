@@ -26,7 +26,10 @@ def get_chat_by_name(db: Session, name: str):
 # todo: can add password hashing here but will work this out later
 def create_chat(db: Session, chat: ChatSchema.ChatCreate):
     # Check if chat name already exists
+
     existing_chat = get_chat_by_name(db, name=chat.name)
+
+    # todo: the problem with the tests occurs here -> gotta work out why.
     if existing_chat:
         raise HTTPException(status_code=400, detail="Chat Name Already Exists!")
 

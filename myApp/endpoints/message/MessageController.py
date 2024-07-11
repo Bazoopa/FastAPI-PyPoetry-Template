@@ -3,14 +3,13 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from database import get_db, engine  # Adjust import as needed
-from endpoints.message import MessageModel, MessageSchema, MessageService
+from database import get_db  # Adjust import as needed
+from endpoints.message import MessageSchema, MessageService
 
 # Configure logging settings (optional)
 logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
 
 # Create database tables if they do not exist
-MessageModel.Base.metadata.create_all(bind=engine)
 
 router = APIRouter()
 

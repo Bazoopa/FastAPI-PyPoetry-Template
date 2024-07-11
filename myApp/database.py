@@ -1,8 +1,9 @@
 import logging
+
 import mysql.connector
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
+
 from settings import SQLALCHEMY_DATABASE_URL, DATABASE
 
 # Establish MySQL connection using mysql.connector with SSL
@@ -28,7 +29,6 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Declare a base class for ORM models
-Base = declarative_base()
 
 
 # Dependency to provide a database session
