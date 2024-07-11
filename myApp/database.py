@@ -33,6 +33,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Declare a base class for ORM models
 Base = declarative_base()
 
+
 # Dependency to provide a database session
 def get_db():
     logger.debug("Attempting to establish database connection...")
