@@ -3,7 +3,8 @@
 import logging  # Add logging for debugging purposes
 
 import pandas as pd
-from database import Base, get_db
+from database import get_db
+from endpoints.base import Base
 from main import app
 from tests.sqlite.test_data import insert_test_data
 from tests.sqlite.test_in_memory_database import client, engine, TestingSessionLocal
@@ -28,7 +29,6 @@ app.dependency_overrides[get_db] = override_get_db
 def setup_function():
     logging.debug("Setting up test database...")
     Base.metadata.create_all(bind=engine)
-
     with TestingSessionLocal() as session:
         insert_test_data(session, engine)
         session.commit()
