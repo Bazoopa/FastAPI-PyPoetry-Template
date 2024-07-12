@@ -1,4 +1,5 @@
-from sqlalchemy import MetaData, Table
+from endpoints.chat.ChatModel import Chat
+from endpoints.message.MessageModel import Message
 
 
 def insert_test_data(session, engine):
@@ -14,15 +15,19 @@ def insert_test_data(session, engine):
         {'username': 'user3', 'message': 'A message in Tech Talk.', 'chat_id': 2}
     ]
 
-    # Define the tables
-    metadata = MetaData()
-    metadata.reflect(bind=engine)  # Bind metadata to the engine
-    chats_table = metadata.tables['chats']
-    messages_table = metadata.tables['messages']
-
     # Insert the data
     for data in chats_data:
-        session.execute(chats_table.insert().values(data))
+        new_chat = Chat(**data)
+        session.add(new_chat)
 
     for data in messages_data:
-        session.execute(messages_table.insert().values(data))
+        # Ensure chat_id exists in the database or handle its creation here
+        chat_id = data.pop('chat_id')
+        chat = session.query(Chat).filter(Chat.id == chat_id).first()
+        if not chat:
+            chat = Chat(id=chat_id, name=f'Chat {chat_id}')  # Example of handling missing chat_id
+            session.add(chat)
+        new_message = Message(chat=chat, **data)
+        session.add(new_message)
+
+    session.commit()
