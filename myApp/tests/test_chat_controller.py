@@ -3,26 +3,10 @@
 import logging  # Add logging for debugging purposes
 
 import pandas as pd
-from fastapi.testclient import TestClient
-from sqlalchemy import create_engine, MetaData, StaticPool
-from sqlalchemy.orm import sessionmaker
-
-from main import app
 from database import Base, get_db
-
-# Setup the TestClient
-client = TestClient(app)
-
-# Setup the in-memory SQLite database for testing
-DATABASE_URL = "sqlite:///:memory:"
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={
-        "check_same_thread": False,
-    },
-    poolclass=StaticPool,
-)
-TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+from main import app
+from tests.test_data import insert_test_data
+from test_in_memory_database import client, engine, TestingSessionLocal
 
 
 def print_database():
@@ -45,21 +29,25 @@ app.dependency_overrides[get_db] = override_get_db
 def setup_function():
     logging.debug("Setting up test database...")
     Base.metadata.create_all(bind=engine)
+
+    with TestingSessionLocal() as session:
+        insert_test_data(session, engine)
+        session.commit()
+
     print_database()
-    logging.debug("Database tables created.")
+    logging.debug("Database tables created and data inserted.")
 
 
-# def teardown_function():
-#     logging.debug("Dropping test database tables...")
-#     Base.metadata.drop_all(bind=engine)
-#     logging.debug("Database tables dropped.")
+def teardown_function():
+    logging.debug("Dropping test database tables...")
+    Base.metadata.drop_all(bind=engine)
+    logging.debug("Database tables dropped.")
 
 
 def test_root():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"message": "Bruce's App!"}
-    print_database()
 
 
 def test_create_chat():
