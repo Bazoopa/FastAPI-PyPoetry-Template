@@ -3,6 +3,8 @@
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine, StaticPool
 from sqlalchemy.orm import sessionmaker
+
+from endpoints.base import Base
 from main import app
 
 # Setup the TestClient
@@ -17,4 +19,8 @@ engine = create_engine(
     },
     poolclass=StaticPool,
 )
+
+Base.metadata.create_all(bind=engine)
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+
