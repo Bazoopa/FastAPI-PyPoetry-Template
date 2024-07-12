@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Found the testing_db problem, now creating new branch to fix">
-      <change afterPath="$PROJECT_DIR$/myApp/tests/test_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myApp/tests/test_in_memory_database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/tests/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/test_chat_controller.py" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Tests and memory database all working">
+      <change afterPath="$PROJECT_DIR$/myApp/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/tests/endpoints/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/tests/endpoints/chat/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myApp/tests/sqlite/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/tests/test_chat_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/endpoints/chat/test_chat_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/sqlite/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/tests/test_in_memory_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/sqlite/test_in_memory_database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b10-getting-pipeline-working" />
+        <entry key="$PROJECT_DIR$" value="b11-fixing-test-db" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,12 +56,19 @@
     "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b11-fixing-test-db",
+    "git-widget-placeholder": "b12-restructuring-the-tests",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_chat_controller.test_create_chat">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\endpoints\chat" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\sqlite-db" />
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\endpoints" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="FastAPI-PyPoetry-Template" />
       <option name="ENV_FILES" value="" />
@@ -82,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_chat_controller.test_create_chat" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FastAPI-PyPoetry-Template" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,17 +103,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_chat_controller.test_create_chat&quot;" />
+      <option name="_new_target" value="&quot;tests.endpoints.chat.test_chat_controller.test_create_chat&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python tests.Python tests for tests.test_chat_controller.test_create_chat" />
+      <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_chat_controller.test_create_chat" />
+        <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720793829425</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tests and memory database all working">
+      <option name="closed" value="true" />
+      <created>1720795746736</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720795746736</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,6 +199,7 @@
     <MESSAGE value="updated the database.py file for lazy connections" />
     <MESSAGE value="test to see if default variables will solve the test failing problem" />
     <MESSAGE value="Found the testing_db problem, now creating new branch to fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Found the testing_db problem, now creating new branch to fix" />
+    <MESSAGE value="Tests and memory database all working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests and memory database all working" />
   </component>
 </project>

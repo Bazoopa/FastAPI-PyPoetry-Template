@@ -5,8 +5,8 @@ import logging  # Add logging for debugging purposes
 import pandas as pd
 from database import Base, get_db
 from main import app
-from tests.test_data import insert_test_data
-from test_in_memory_database import client, engine, TestingSessionLocal
+from tests.sqlite.test_data import insert_test_data
+from tests.sqlite.test_in_memory_database import client, engine, TestingSessionLocal
 
 
 def print_database():
