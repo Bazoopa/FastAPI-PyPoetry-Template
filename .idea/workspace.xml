@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="updating the YML file to change working directory to myApp before it runs the tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="updated the database.py file for lazy connections" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,13 +110,22 @@
       <option name="project" value="LOCAL" />
       <updated>1720777588868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated the database.py file for lazy connections">
+      <option name="closed" value="true" />
+      <created>1720779440003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720779440003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updating the YML file etc" />
     <MESSAGE value="updating the YML file to change working directory to myApp before it runs the tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating the YML file to change working directory to myApp before it runs the tests" />
+    <MESSAGE value="updated the database.py file for lazy connections" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the database.py file for lazy connections" />
   </component>
 </project>
