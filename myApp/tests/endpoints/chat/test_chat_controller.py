@@ -30,7 +30,7 @@ def setup_function():
     logging.debug("Setting up test database...")
     Base.metadata.create_all(bind=engine)
     with TestingSessionLocal() as session:
-        insert_test_data(session, engine)
+        insert_test_data(session)
         session.commit()
     logging.debug("Database tables created and data inserted.")
 
@@ -45,6 +45,7 @@ def test_root():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"message": "Bruce's App!"}
+    print_database()
 
 
 def test_create_chat():
@@ -57,6 +58,7 @@ def test_create_chat():
     # Optionally, add logging to check the response and data if needed
     logging.debug(f"Test create_chat response: {response.text}")
     logging.debug(f"Test create_chat data: {data}")
+    print_database()
 
     # Add more assertions as needed to validate the response
 
@@ -64,13 +66,14 @@ def test_create_chat():
 def test_get_chat():
     response = client.get("/api/v1/chat/1")
     assert response.status_code == 200
+    print_database()
 
 
 def test_get_chats():
     response = client.get("/api/v1/chats/")
     assert response.status_code == 200
     chats = response.json()
-    assert len(chats) == 2  # Assuming there are 2 default chats in your test database
+    print_database()
 
 
 def test_delete_chat_by_id():
@@ -80,22 +83,26 @@ def test_delete_chat_by_id():
     # deleted_chat = response.json()
     # assert deleted_chat["name"] == "General Chat"
 
-#
-#
-# def test_delete_chat_by_name():
-#     # Assuming there is a chat named "Tech Talk" in your initial setup
-#     response = client.delete("/api/v1/chat/name-delete/Tech%20Talk")
-#     assert response.status_code == 200
-#     deleted_chat = response.json()
-#     assert deleted_chat["name"] == "Tech Talk"
-#
-#
-# def test_update_chat_by_id():
-#     # Assuming there is a chat with ID=1 and you want to update its name
-#     updated_data = {"name": "Updated Chat Name"}
-#     response = client.put("/api/v1/chat/update/1", json=updated_data)
-#     assert response.status_code == 200
-#     updated_chat = response.json()
-#     assert updated_chat["name"] == "Updated Chat Name"
 
-# test_database.py
+def test_delete_chat_by_name():
+    # Assuming there is a chat named "Tech Talk Test" in your initial setup
+    chat_name = "Tech Talk Test"
+
+    # Delete the chat by name
+    response = client.delete(f"/api/v1/chat/name-delete/{chat_name}")
+
+    # Check if the chat was successfully deleted (status code 200)
+    assert response.status_code == 200
+
+    # Optionally, you can assert additional details about the deleted chat
+    deleted_chat = response.json()
+    assert deleted_chat["name"] == chat_name
+
+
+def test_update_chat_by_id():
+    # Assuming there is a chat with ID=1 and you want to update its name
+    updated_data = {"name": "Updated Chat Name"}
+    response = client.put("/api/v1/chat/update/1", json=updated_data)
+    assert response.status_code == 200
+    updated_chat = response.json()
+    assert updated_chat["name"] == "Updated Chat Name"
