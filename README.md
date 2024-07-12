@@ -106,3 +106,14 @@ schemas.py acts like a DTO?
 useful commands:
 npm start - starts the service
 
+# To-do:
+- Make front end in react.
+- Dockerise the project.
+- Finish Tests
+- Host the project on Azure
+
+# Stretch Goals:
+- Make my GitHub pipeline not just test, but also deploy
+- Add More complex features
+- Add Logging in and authentication.
+

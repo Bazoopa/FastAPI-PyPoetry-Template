@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
+# The default values are required for the tests to work, might need to change this later.
 # Database Configuration
 DATABASE = {
     "hostname": os.getenv("DB_HOST", "localhost"),
