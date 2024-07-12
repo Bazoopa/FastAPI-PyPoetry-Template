@@ -1,8 +1,8 @@
 # database.py
-
+import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, ForeignKey
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 
 # Create an engine to connect to the SQLite in-memory database
 engine = create_engine('sqlite:///:memory:', echo=True)
@@ -37,8 +37,8 @@ session = Session()
 
 # Insert data into 'chats'
 chats_data = [
-    {'name': 'General Chat'},
-    {'name': 'Tech Talk'}
+    {'name': 'General Chat Test'},
+    {'name': 'Tech Talk Test'}
 ]
 
 for data in chats_data:
@@ -62,3 +62,6 @@ session.close()
 
 # Define Base for declarative models
 Base = declarative_base()
+
+
+
