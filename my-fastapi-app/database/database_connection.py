@@ -2,9 +2,9 @@ import logging
 
 import mysql.connector
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker  # Updated import
+from sqlalchemy.orm import sessionmaker
 
-from database.settings import SQLALCHEMY_DATABASE_URL, DATABASE
+from database.database_settings import SQLALCHEMY_DATABASE_URL, DATABASE
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)

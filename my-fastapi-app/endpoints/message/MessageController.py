@@ -3,7 +3,7 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from database.database import get_db  # Adjust import as needed
+from database.database_connection import get_db  # Adjust import as needed
 from endpoints.message import MessageSchema, MessageService
 
 # Configure logging settings (optional)

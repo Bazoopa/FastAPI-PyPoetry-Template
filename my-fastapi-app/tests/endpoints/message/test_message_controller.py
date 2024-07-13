@@ -1,7 +1,7 @@
 import logging  # Add logging for debugging purposes
 import pandas as pd
 import pytest
-from database.database import get_db
+from database.database_connection import get_db
 from endpoints.base import Base
 from main import app
 from tests.sqlite.sqlite_database_test_data import insert_test_data
