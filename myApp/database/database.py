@@ -4,7 +4,7 @@ import mysql.connector
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker  # Updated import
 
-from settings import SQLALCHEMY_DATABASE_URL, DATABASE
+from database.settings import SQLALCHEMY_DATABASE_URL, DATABASE
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
