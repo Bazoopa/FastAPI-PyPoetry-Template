@@ -4,148 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="restructured my tests">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-fastapi-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/add-yours.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/amazon-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/microsoft-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/netflix-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/public/vercel-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/Accordion.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/Accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionAccordion.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionAccordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionContent.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionPanel.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionTitle.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/AccordionTitle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Accordion/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Checkbox/Checkbox.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Checkbox/Checkbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Checkbox/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Checkbox/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/Dimmer.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/Dimmer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/DimmerDimmable.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/DimmerDimmable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/DimmerInner.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/DimmerInner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dimmer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/Dropdown.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/Dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownDivider.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownDivider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownHeader.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownItem.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownMenu.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownSearchInput.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownSearchInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownText.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/DropdownText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/TODO.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/utils/getMenuOptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Dropdown/utils/getSelectedIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Embed/Embed.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Embed/Embed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Embed/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Embed/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/Modal.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalActions.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalContent.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalDescription.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalDimmer.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalDimmer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalHeader.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/ModalHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Modal/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/Popup.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/Popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/PopupContent.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/PopupContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/PopupHeader.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/PopupHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/lib/createReferenceProxy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Popup/lib/positions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Progress/Progress.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Progress/Progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Progress/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Progress/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/Rating.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/Rating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/RatingIcon.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/RatingIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Rating/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/Search.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchCategory.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchCategoryLayout.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchCategoryLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchResult.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchResult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchResults.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/SearchResults.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Search/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/Sidebar.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/SidebarPushable.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/SidebarPushable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/SidebarPusher.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/SidebarPusher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sticky/Sticky.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sticky/Sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sticky/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Sticky/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/Tab.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/Tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/TabPane.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/TabPane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Tab/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/Transition.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/Transition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/TransitionGroup.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/TransitionGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/utils/childMapping.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/utils/computeStatuses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/modules/Transition/utils/wrapChild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FastAPI-PyPoetry-Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FastAPI-PyPoetry-Template.iml" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Making updates to the front end">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-fastapi-app/endpoints/message/MessageService.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/endpoints/message/MessageService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-fastapi-app/tests/endpoints/chat/test_chat_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/tests/endpoints/chat/test_chat_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-react-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b11-fixing-test-db" />
+        <entry key="$PROJECT_DIR$" value="b15-refactor-myApp-directory" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -196,7 +57,7 @@
     "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b15-refactor-myApp-directory",
+    "git-widget-placeholder": "b17-frontend-and-readme-updates",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
     "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
@@ -339,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720796121962</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Making updates to the front end">
+      <option name="closed" value="true" />
+      <created>1720899334403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720899334403</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,6 +220,7 @@
     <MESSAGE value="Found the testing_db problem, now creating new branch to fix" />
     <MESSAGE value="Tests and memory database all working" />
     <MESSAGE value="restructured my tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructured my tests" />
+    <MESSAGE value="Making updates to the front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making updates to the front end" />
   </component>
 </project>
