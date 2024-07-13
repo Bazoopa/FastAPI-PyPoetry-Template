@@ -3,7 +3,7 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from database import get_db  # Adjust import as needed
+from database.database_connection import get_db  # Adjust import as needed
 from endpoints.message import MessageSchema, MessageService
 
 # Configure logging settings (optional)
@@ -35,6 +35,6 @@ def delete_message(message_id: int, db: Session = Depends(get_db)):
     return MessageService.delete_message_by_id(db=db, message_id=message_id)
 
 
-# @router.put("/message/{message_id}", response_model=MessageSchema)
-# def update_message(message_id: int, updated_data: MessageUpdate, db: Session = Depends(get_db)):
-#     return MessageService.update_message(db=db, message_id=message_id, updated_data=updated_data.dict(exclude_unset=True))
+# @router.put("/message/{message_id}", response_model=MessageSchema) def update_message(message_id: int,
+# updated_data: MessageUpdate, db: Session = Depends(get_db)): return MessageService.update_message(db=db,
+# message_id=message_id, updated_data=updated_data.dict(exclude_unset=True))

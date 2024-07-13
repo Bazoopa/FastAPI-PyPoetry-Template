@@ -25,7 +25,7 @@ def create_message(db: Session, message: MessageSchema.MessageCreate):
         db.commit()
         db.refresh(db_message)
         return db_message
-    except Exception as e:
+    except Exception:
         raise HTTPException(
             status_code=500,
             detail="Chat doesn't exist!"

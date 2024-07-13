@@ -2,11 +2,11 @@ import logging  # Add logging for debugging purposes
 
 import pandas as pd
 import pytest
-from database import get_db
+from database.database_connection import get_db
 from endpoints.base import Base
 from main import app
-from tests.sqlite.test_data import insert_test_data
-from tests.sqlite.test_in_memory_database import client, engine, TestingSessionLocal
+from tests.sqlite.sqlite_database_test_data import insert_test_data
+from tests.sqlite.sqlite_database import client, engine, TestingSessionLocal
 
 
 def print_database():
