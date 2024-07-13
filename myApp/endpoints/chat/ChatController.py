@@ -3,7 +3,7 @@ import logging
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from database import get_db
+from database.database import get_db
 from endpoints.chat import ChatSchema, ChatService
 
 # Configure logging settings (optional)
