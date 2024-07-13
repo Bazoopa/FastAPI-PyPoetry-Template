@@ -19,8 +19,8 @@ const FixedMenuLayout = () => (
           <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
           FastAPI-Template-Project
         </Menu.Item>
-        {/* Commenting out the dropdown menu */}
-        {/*
+        <Menu.Item as='a'>Home</Menu.Item>
+
         <Dropdown item simple text='Dropdown'>
           <Dropdown.Menu>
             <Dropdown.Item>List Item</Dropdown.Item>
@@ -38,13 +38,11 @@ const FixedMenuLayout = () => (
             <Dropdown.Item>List Item</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        */}
-        {/* Change "Home" to "Github code" */}
-        <Menu.Item as='a' href='https://github.com/Bazoopa/FastAPI-PyPoetry-Template' target='_blank'>
-          GitHub Code
-        </Menu.Item>
       </Container>
     </Menu>
+
+    <div class="row">
+  <div class="column">
 
     <Container text style={{ marginTop: '7em' }}>
       <Header as='h1'>FastAPI-Template-Project:</Header>
@@ -65,7 +63,9 @@ To show basic functionality of a full stack FastAPI project to show how the temp
       <Image src='/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
 
       <p>
+
       </p>
+
 <div>
   <h1>Tech Stack Summary</h1>
 
@@ -212,6 +212,13 @@ To show basic functionality of a full stack FastAPI project to show how the temp
 
 
     </Container>
+
+
+    </div>
+  <div class="column">
+
+   <h2>Frontend</h2></div>
+</div>
 
     <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
       <Container textAlign='center'>

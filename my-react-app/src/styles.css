@@ -1,0 +1,12 @@
+.two-column-layout {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.left-column {
+  flex: 1; /* Take up remaining space */
+}
+
+.right-column {
+  flex: 1; /* Take up remaining space */
+}
