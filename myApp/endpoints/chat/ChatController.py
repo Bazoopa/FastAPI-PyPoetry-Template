@@ -45,4 +45,4 @@ def delete_chat_by_name(chat_name: str, db: Session = Depends(get_db)):
 # Update a chat name, I may remove this from being usable at a later date.
 @router.put("/chat/update/{chat_id}", response_model=ChatSchema.DBChat, tags=["Chat"])
 def update_chat_by_id(chat_id: int, updated_data: ChatSchema.ChatUpdate, db: Session = Depends(get_db)):
-    return ChatService.update_chat_by_id(db=db, chat_id=chat_id, updated_data=updated_data.dict(exclude_unset=True))
+    return ChatService.update_chat_by_id(db=db, chat_id=chat_id, updated_data=updated_data.model_dump(exclude_unset=True))
