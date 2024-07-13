@@ -88,3 +88,5 @@ def test_update_chat_by_id(setup_and_teardown):
     assert response.status_code == 200
     updated_chat = response.json()
     assert updated_chat["name"] == "Updated Chat Name"
+
+# Can add a test for load, which uses a large dataset/DB, and then chooses the database through environment variables.
