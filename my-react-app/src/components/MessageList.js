@@ -81,6 +81,12 @@ const MessageList = ({}) => {
     }
   };
 
+  const handleNewChat = () => {
+    // Placeholder function for handling new chat creation
+    console.log('Creating new chat...');
+    // You can implement functionality to create a new chat here
+  };
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -95,6 +101,11 @@ const MessageList = ({}) => {
           </div>
         ))}
       </div>
+
+      {/* New Chat button below the chat list */}
+      <button onClick={handleNewChat} style={{ marginTop: '10px' }}>
+        New Chat
+      </button>
 
       {selectedChat && (
         <div className="message-display">
