@@ -55,7 +55,8 @@ const App = () => {
 
 
         <div>
-          <h4>Stack:</h4>
+
+          <h4 style={{ marginTop: '40px' }}>Stack:</h4> {/* Use object syntax for style */}
           <h4>Backend Technologies:</h4>
           <ul>
             <li><strong>Framework:</strong> FastAPI</li>
