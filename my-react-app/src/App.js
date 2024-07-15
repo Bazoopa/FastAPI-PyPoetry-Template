@@ -42,13 +42,8 @@ const App = () => {
         </p>
 
 
-
-
-
-
-
         <div>
-          <ChatList />
+
           <MessageList />
         </div>
 

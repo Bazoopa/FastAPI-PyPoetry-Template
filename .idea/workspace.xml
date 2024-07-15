@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="making a snapshot">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,18 +52,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b25-react-adding-buttons",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;b25-react-adding-buttons&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\my-fastapi-app" />
@@ -115,6 +117,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
         <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
       </list>
     </recent_temporary>

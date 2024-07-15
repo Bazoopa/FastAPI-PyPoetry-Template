@@ -1,75 +1,108 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const MessageList = ({ chatId }) => {
-  const [chatName, setChatName] = useState('');
+const MessageList = ({}) => {
+  const [chats, setChats] = useState([]);
+  const [selectedChat, setSelectedChat] = useState(null);
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const fetchChatName = async () => {
+    const fetchChats = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/v1/chat/${chatId}`);
-        if (response.data && response.data.name) {
-          setChatName(response.data.name);
-        } else {
-          setChatName('');
-        }
+        setIsLoading(true);
+        const response = await axios.get('http://localhost:8000/api/v1/chats');
+        setChats(response.data);
+        setIsLoading(false);
       } catch (error) {
-        console.error('Error fetching chat name:', error);
-        setChatName('');
+        console.error('Error fetching chats:', error);
+        setIsLoading(false);
       }
     };
 
-    fetchChatName();
-  }, [chatId]);
+    fetchChats();
+  }, []);
 
-  const fetchMessages = async () => {
+  const fetchMessagesForChat = async (chatId) => {
     try {
       setIsLoading(true);
-      setError(null);
-      const response = await axios.get(`http://localhost:8000/api/v1/messages/${chatId}`);
-      setMessages(response.data);
+      const [chatResponse, messagesResponse] = await Promise.all([
+        axios.get(`http://localhost:8000/api/v1/chat/${chatId}`),
+        axios.get(`http://localhost:8000/api/v1/messages/${chatId}`)
+      ]);
+      setSelectedChat(chatResponse.data);
+      setMessages(messagesResponse.data);
+      setIsLoading(false);
     } catch (error) {
-      console.error('Error fetching messages:', error);
-      setError('Error fetching messages. Please try again.');
+      console.error('Error fetching chat or messages:', error);
+      setSelectedChat(null);
       setMessages([]);
-    } finally {
       setIsLoading(false);
     }
   };
 
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-    if (!isOpen) {
-      fetchMessages();
+  const handleClickOpen = async (chatId) => {
+    if (chatId === selectedChat?.id) {
+      // If the same chat is clicked again, clear messages
+      setSelectedChat(null);
+      setMessages([]);
+    } else {
+      await fetchMessagesForChat(chatId);
     }
   };
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  const handleSendMessage = () => {
+    // Placeholder function for sending a message
+    console.log('Sending message...');
+    // You can implement functionality to send the message here
+  };
+
   return (
-    <div>
-      <button onClick={toggleOpen}>{isOpen ? 'Close' : 'Open'} Messages for {chatName}</button>
-      {isOpen && (
-        <div>
-          {isLoading ? (
-            <div>Loading...</div>
-          ) : messages.length > 0 ? (
-            <div>
-              <h2>Messages in Chat {chatName}</h2>
-              <ul>
-                {messages.map(message => (
-                  <li key={message.id}>
-                    <strong>{message.username}</strong>: {message.message}
-                  </li>
-                ))}
-              </ul>
-            </div>
+    <div className="message-list-container">
+      <div className="chat-list">
+        {chats.map(chat => (
+          <div key={chat.id} className="chat-item">
+            <button onClick={() => handleClickOpen(chat.id)}>Open</button>
+            <span>{chat.name}</span>
+          </div>
+        ))}
+      </div>
+
+      {selectedChat && (
+        <div className="message-display">
+          <h2>Messages in Chat {selectedChat.name}</h2>
+          {messages.length > 0 ? (
+            <ul>
+              {messages.map(message => (
+                <li key={message.id}>
+                  <strong>{message.username}</strong>: {message.message}
+                </li>
+              ))}
+            </ul>
           ) : (
             <p>No messages found</p>
           )}
-          {error && <p>{error}</p>}
+
+          {/* Text boxes for username and message */}
+          <div>
+            <input type="text" placeholder="Enter your username" />
+          </div>
+          <div>
+            <textarea rows="4" placeholder="Type your message"></textarea>
+          </div>
+
+          {/* Send Message button */}
+          <button onClick={handleSendMessage}>Send Message</button>
+        </div>
+      )}
+
+      {!selectedChat && (
+        <div className="select-chat-message">
+          <p>Please select a chat</p>
         </div>
       )}
     </div>
