@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const MessageList = ({}) => {
+const MessageList = () => {
   const [chats, setChats] = useState([]);
   const [selectedChat, setSelectedChat] = useState(null);
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [usernameInput, setUsernameInput] = useState('');
   const [messageInput, setMessageInput] = useState('');
+  const [newChatName, setNewChatName] = useState('');
 
   useEffect(() => {
     const fetchChats = async () => {
@@ -81,10 +82,29 @@ const MessageList = ({}) => {
     }
   };
 
-  const handleNewChat = () => {
-    // Placeholder function for handling new chat creation
-    console.log('Creating new chat...');
-    // You can implement functionality to create a new chat here
+  const handleNewChat = async () => {
+    if (!newChatName) {
+      alert('Please enter a chat name.');
+      return;
+    }
+
+    try {
+      const chatData = {
+        name: newChatName
+      };
+
+      const response = await axios.post('http://localhost:8000/api/v1/chat/', chatData);
+      console.log('Chat created successfully:', response.data);
+
+      // Update local chats state with the new chat
+      setChats([...chats, response.data]);
+
+      // Clear the new chat name input
+      setNewChatName('');
+    } catch (error) {
+      console.error('Error creating chat:', error);
+      // Handle error scenario as needed
+    }
   };
 
   if (isLoading) {
@@ -103,9 +123,17 @@ const MessageList = ({}) => {
       </div>
 
       {/* New Chat button below the chat list */}
-      <button onClick={handleNewChat} style={{ marginTop: '10px' }}>
-        New Chat
-      </button>
+      <div>
+        <input
+          type="text"
+          placeholder="Enter chat name"
+          value={newChatName}
+          onChange={(e) => setNewChatName(e.target.value)}
+        />
+        <button onClick={handleNewChat} style={{ marginTop: '10px' }}>
+          Create Chat
+        </button>
+      </div>
 
       {selectedChat && (
         <div className="message-display">
