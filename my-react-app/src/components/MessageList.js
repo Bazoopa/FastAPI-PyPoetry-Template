@@ -30,24 +30,22 @@ const MessageList = ({ chatId }) => {
     return null; // Return nothing if chatId is null
   }
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div>
-      {messages.length > 0 && (
-        <h2>Messages in Chat {chatId}</h2>
-      )}
+      <h2>Messages in Chat {chatId}</h2>
       <ul>
-        {messages.length > 0 ? (
-          messages.map(message => (
-            <li key={message.id}>
-              <strong>{message.username}</strong>: {message.message}
-            </li>
-          ))
+        {isLoading ? (
+          <li>Loading...</li>
         ) : (
-          <li>No messages found</li>
+          messages.length > 0 ? (
+            messages.map(message => (
+              <li key={message.id}>
+                <strong>{message.username}</strong>: {message.message}
+              </li>
+            ))
+          ) : (
+            <li>No messages found</li>
+          )
         )}
       </ul>
     </div>
