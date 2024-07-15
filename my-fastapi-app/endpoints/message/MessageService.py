@@ -14,7 +14,6 @@ def get_message(db: Session, message_id: int):
 
 
 def get_all_messages_from_chat(db: Session, chat_id: int, skip: int = 0, limit: int = 100) -> list[MessageSchema]:
-    """Get all messages from a specific chat with optional pagination."""
     return db.query(Message).filter(Message.chat_id == chat_id).offset(skip).limit(limit).all()
 
 

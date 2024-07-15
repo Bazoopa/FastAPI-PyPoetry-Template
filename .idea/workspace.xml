@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="restructured my tests">
-      <change afterPath="$PROJECT_DIR$/myApp/tests/endpoints/message/__init__.py" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Mostly finished, now to get it working with docker and then on to azure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/tests/endpoints/chat/test_chat_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/endpoints/chat/test_chat_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/tests/sqlite/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/tests/sqlite/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-fastapi-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +24,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b11-fixing-test-db" />
+        <entry key="$PROJECT_DIR$" value="b30-testing-some-edge-cases" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Bazoopa&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Bazoopa/FastAPI-PyPoetry-Template.git&quot;,
@@ -53,13 +58,15 @@
     "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b12-restructuring-the-tests",
+    "git-widget-placeholder": "b31-docker-updates",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template"
+    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\my-fastapi-app" />
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\endpoints\chat" />
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\sqlite-db" />
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\myApp\tests\endpoints" />
@@ -110,6 +117,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
         <item itemvalue="Python tests.Python tests for tests.endpoints.chat.test_chat_controller.test_create_chat" />
       </list>
     </recent_temporary>
@@ -194,7 +202,151 @@
       <option name="project" value="LOCAL" />
       <updated>1720796121962</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Making updates to the front end">
+      <option name="closed" value="true" />
+      <created>1720899334403</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720899334403</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding text to the frontend">
+      <option name="closed" value="true" />
+      <created>1720900109659</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720900109659</updated>
+    </task>
+    <task id="LOCAL-00011" summary="editing the front end text">
+      <option name="closed" value="true" />
+      <created>1720901120192</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720901120192</updated>
+    </task>
+    <task id="LOCAL-00012" summary="close">
+      <option name="closed" value="true" />
+      <created>1720907626258</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720907626258</updated>
+    </task>
+    <task id="LOCAL-00013" summary="clicking on chats is working now which is incredible">
+      <option name="closed" value="true" />
+      <created>1721042813163</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721042813163</updated>
+    </task>
+    <task id="LOCAL-00014" summary="clicking on chats is working now which is incredible">
+      <option name="closed" value="true" />
+      <created>1721044250151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721044250151</updated>
+    </task>
+    <task id="LOCAL-00015" summary="this should work">
+      <option name="closed" value="true" />
+      <created>1721044804699</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721044804699</updated>
+    </task>
+    <task id="LOCAL-00016" summary="got rid of the part at the bottom I needed rid off">
+      <option name="closed" value="true" />
+      <created>1721046202931</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721046202931</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Clicking on chats/ threads is now working">
+      <option name="closed" value="true" />
+      <created>1721046449212</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721046449212</updated>
+    </task>
+    <task id="LOCAL-00018" summary="making a snapshot">
+      <option name="closed" value="true" />
+      <created>1721050558904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721050558904</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding text boxes and send message button">
+      <option name="closed" value="true" />
+      <created>1721052336321</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721052336321</updated>
+    </task>
+    <task id="LOCAL-00020" summary="text box and message with no functionality is now implemented, now I need to implement the logic">
+      <option name="closed" value="true" />
+      <created>1721052605520</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721052605520</updated>
+    </task>
+    <task id="LOCAL-00021" summary="sending messages to chats is now working.&#10;next to do is adding a new chat, followed by deleting chats and then beutifying">
+      <option name="closed" value="true" />
+      <created>1721053091082</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721053091082</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added a new chat button positioned in the right place but with no fuctionality">
+      <option name="closed" value="true" />
+      <created>1721053349323</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721053349323</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added new chat creation, now I just need to set up deleting and beutify">
+      <option name="closed" value="true" />
+      <created>1721053575779</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721053575779</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added delete chat button.">
+      <option name="closed" value="true" />
+      <created>1721054436567</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721054436567</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Delete functionality is now working">
+      <option name="closed" value="true" />
+      <created>1721054751962</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1721054751962</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Mostly finished, now to get it working with docker and then on to azure">
+      <option name="closed" value="true" />
+      <created>1721058706276</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1721058706276</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,6 +358,23 @@
     <MESSAGE value="Found the testing_db problem, now creating new branch to fix" />
     <MESSAGE value="Tests and memory database all working" />
     <MESSAGE value="restructured my tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructured my tests" />
+    <MESSAGE value="Making updates to the front end" />
+    <MESSAGE value="Adding text to the frontend" />
+    <MESSAGE value="editing the front end text" />
+    <MESSAGE value="close" />
+    <MESSAGE value="clicking on chats is working now which is incredible" />
+    <MESSAGE value="this should work" />
+    <MESSAGE value="got rid of the part at the bottom I needed rid off" />
+    <MESSAGE value="Clicking on chats/ threads is now working" />
+    <MESSAGE value="making a snapshot" />
+    <MESSAGE value="Adding text boxes and send message button" />
+    <MESSAGE value="text box and message with no functionality is now implemented, now I need to implement the logic" />
+    <MESSAGE value="sending messages to chats is now working.&#10;next to do is adding a new chat, followed by deleting chats and then beutifying" />
+    <MESSAGE value="added a new chat button positioned in the right place but with no fuctionality" />
+    <MESSAGE value="added new chat creation, now I just need to set up deleting and beutify" />
+    <MESSAGE value="added delete chat button." />
+    <MESSAGE value="Delete functionality is now working" />
+    <MESSAGE value="Mostly finished, now to get it working with docker and then on to azure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mostly finished, now to get it working with docker and then on to azure" />
   </component>
 </project>
