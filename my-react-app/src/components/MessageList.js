@@ -15,7 +15,7 @@ const MessageList = () => {
     const fetchChats = async () => {
       try {
         setIsLoading(true);
-        const response = await axios.get('http://localhost:8000/api/v1/chats');
+        const response = await axios.get('http://bruce.installation00.net:8000/api/v1/chats');
         setChats(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -31,8 +31,8 @@ const MessageList = () => {
     try {
       setIsLoading(true);
       const [chatResponse, messagesResponse] = await Promise.all([
-        axios.get(`http://localhost:8000/api/v1/chat/${chatId}`),
-        axios.get(`http://localhost:8000/api/v1/messages/${chatId}`)
+        axios.get(`http://bruce.installation00.net:8000/api/v1/chat/${chatId}`),
+        axios.get(`http://bruce.installation00.net:8000/api/v1/messages/${chatId}`)
       ]);
       setSelectedChat(chatResponse.data);
       setMessages(messagesResponse.data);
@@ -67,7 +67,7 @@ const MessageList = () => {
         chat_id: selectedChat.id
       };
 
-      const response = await axios.post('http://localhost:8000/api/v1/message/', messageData);
+      const response = await axios.post('http://bruce.installation00.net:8000/api/v1/message/', messageData);
       console.log('Message sent successfully:', response.data);
 
       setMessages([...messages, response.data]);
@@ -89,7 +89,7 @@ const MessageList = () => {
         name: newChatName
       };
 
-      const response = await axios.post('http://localhost:8000/api/v1/chat/', chatData);
+      const response = await axios.post('http://bruce.installation00.net:8000/api/v1/chat/', chatData);
       console.log('Chat created successfully:', response.data);
 
       setChats([...chats, response.data]);
@@ -111,7 +111,7 @@ const MessageList = () => {
     }
 
     try {
-      const response = await axios.delete(`http://localhost:8000/api/v1/chat/id-delete/${selectedChat.id}`);
+      const response = await axios.delete(`http://bruce.installation00.net:8000/api/v1/chat/id-delete/${selectedChat.id}`);
       console.log('Chat deleted successfully:', response.data);
 
       setChats(chats.filter(chat => chat.id !== selectedChat.id));
