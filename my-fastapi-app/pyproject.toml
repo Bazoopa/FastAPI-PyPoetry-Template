@@ -16,6 +16,7 @@ mysql-connector-python = "^9.0.0"
 python-dotenv = "^1.0.1"
 flake8 = "^7.1.0"
 pandas = "^2.2.2"
+fastapi-cors = "^0.0.6"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="editing the front end text">
-      <change afterPath="$PROJECT_DIR$/my-react-app/src/styles.css" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="close">
+      <change afterPath="$PROJECT_DIR$/my-react-app/src/components/ChatList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-react-app/src/services/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-fastapi-app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-fastapi-app/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-fastapi-app/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-react-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-react-app/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b15-refactor-myApp-directory" />
+        <entry key="$PROJECT_DIR$" value="b17-frontend-and-readme-updates" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,18 +60,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test_main.test_create_chat.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;b17-frontend-and-readme-updates&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "b18-adding-right-column",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\my-fastapi-app" />
@@ -225,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720901120192</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="close">
+      <option name="closed" value="true" />
+      <created>1720907626258</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720907626258</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -240,6 +256,7 @@
     <MESSAGE value="Making updates to the front end" />
     <MESSAGE value="Adding text to the frontend" />
     <MESSAGE value="editing the front end text" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing the front end text" />
+    <MESSAGE value="close" />
+    <option name="LAST_COMMIT_MESSAGE" value="close" />
   </component>
 </project>
