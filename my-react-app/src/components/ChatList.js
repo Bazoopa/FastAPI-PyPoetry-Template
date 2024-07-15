@@ -1,11 +1,13 @@
+// src/components/ChatList.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { List, Button } from 'semantic-ui-react';
 
-const ChatList = () => {
+const ChatList = ({ onSelectChat }) => {
   const [chats, setChats] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/v1/chats')
+    axios.get('/api/chats/')
       .then(response => {
         setChats(response.data);
       })
@@ -15,16 +17,15 @@ const ChatList = () => {
   }, []);
 
   return (
-    <div>
-      <h2>All Chats</h2>
-      <ul>
-        {chats.map(chat => (
-          <li key={chat.id}>
+    <List>
+      {chats.map(chat => (
+        <List.Item key={chat.id}>
+          <Button onClick={() => onSelectChat(chat.id)}>
             {chat.name}
-          </li>
-        ))}
-      </ul>
-    </div>
+          </Button>
+        </List.Item>
+      ))}
+    </List>
   );
 };
 

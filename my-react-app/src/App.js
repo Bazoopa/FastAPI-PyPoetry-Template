@@ -12,6 +12,8 @@ import {
 import ChatList from './components/ChatList';
 import MessageList from './components/MessageList';
 
+
+
 const App = () => {
   return (
     <div>
@@ -45,14 +47,20 @@ const App = () => {
 
 
 
-
-
-        <div>
-          <ChatList />
-          <MessageList />
-        </div>
-
-
+  return (
+    <div>
+      <h2>All Chats</h2>
+      <ul>
+        {chats.map(chat => (
+          <li key={chat.id} onClick={() => handleChatSelect(chat.id)}>
+            {chat.name}
+          </li>
+        ))}
+      </ul>
+      {selectedChatId !== null && <MessageList chatId={selectedChatId} />}
+    </div>
+  );
+};
 
 
 
