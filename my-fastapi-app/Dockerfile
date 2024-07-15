@@ -15,6 +15,9 @@ RUN poetry install --no-root
 # Copy the rest of the application code
 COPY . .
 
+# Copy .env file from database folder to the working directory
+COPY database/.env ./.env
+
 EXPOSE 8000
 
 CMD ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
