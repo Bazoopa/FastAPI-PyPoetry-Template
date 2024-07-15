@@ -113,8 +113,14 @@ const MessageList = () => {
       return;
     }
 
+    // Confirm deletion with user
+    const confirmDelete = window.confirm(`Are you sure you want to delete the chat "${selectedChat.name}"?`);
+    if (!confirmDelete) {
+      return;
+    }
+
     try {
-      const response = await axios.delete(`http://localhost:8000/api/v1/chat/${selectedChat.id}`);
+      const response = await axios.delete(`http://localhost:8000/api/v1/chat/id-delete/${selectedChat.id}`);
       console.log('Chat deleted successfully:', response.data);
 
       // Remove the deleted chat from local state
@@ -196,9 +202,7 @@ const MessageList = () => {
           <div>
             {/* Send Message button */}
             <button onClick={handleSendMessage}>Send Message</button>
-          </div>
 
-          <div>
             {/* Delete Chat button */}
             <button onClick={handleDeleteChat} style={{ marginTop: '10px' }}>
               Delete Chat

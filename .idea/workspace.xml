@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="added new chat creation, now I just need to set up deleting and beutify">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="added delete chat button.">
       <change beforePath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b27-adding-new-chat-function" />
+        <entry key="$PROJECT_DIR$" value="b28-adding-delete-chat" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +56,7 @@
     "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b28-adding-delete-chat",
+    "git-widget-placeholder": "b29-adding-delete-chat-functionality",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
     "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
@@ -321,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721053575779</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added delete chat button.">
+      <option name="closed" value="true" />
+      <created>1721054436567</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721054436567</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -347,6 +354,7 @@
     <MESSAGE value="sending messages to chats is now working.&#10;next to do is adding a new chat, followed by deleting chats and then beutifying" />
     <MESSAGE value="added a new chat button positioned in the right place but with no fuctionality" />
     <MESSAGE value="added new chat creation, now I just need to set up deleting and beutify" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new chat creation, now I just need to set up deleting and beutify" />
+    <MESSAGE value="added delete chat button." />
+    <option name="LAST_COMMIT_MESSAGE" value="added delete chat button." />
   </component>
 </project>
