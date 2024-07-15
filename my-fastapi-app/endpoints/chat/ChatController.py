@@ -6,13 +6,13 @@ from sqlalchemy.orm import Session
 from database.database_connection import get_db
 from endpoints.chat import ChatSchema, ChatService
 
-# Configure logging settings (optional)
-logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
+
+logging.basicConfig(level=logging.DEBUG)
 
 router = APIRouter()
 
 
-# Example of using get_db()
+
 @router.get("/chat/{chat_id}", response_model=ChatSchema.DBChat, tags=["Chat"])
 def getChat(chat_id: int, db: Session = Depends(get_db)):
     return ChatService.getChat(db, chat_id=chat_id)
