@@ -6,6 +6,8 @@ const MessageList = ({}) => {
   const [selectedChat, setSelectedChat] = useState(null);
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [usernameInput, setUsernameInput] = useState('');
+  const [messageInput, setMessageInput] = useState('');
 
   useEffect(() => {
     const fetchChats = async () => {
@@ -51,15 +53,37 @@ const MessageList = ({}) => {
     }
   };
 
+  const handleSendMessage = async () => {
+    if (!usernameInput || !messageInput || !selectedChat) {
+      alert('Please enter username and message, and select a chat.');
+      return;
+    }
+
+    try {
+      const messageData = {
+        username: usernameInput,
+        message: messageInput,
+        chat_id: selectedChat.id
+      };
+
+      const response = await axios.post('http://localhost:8000/api/v1/message/', messageData);
+      console.log('Message sent successfully:', response.data);
+
+      // Update local messages state with the new message
+      setMessages([...messages, response.data]);
+
+      // Clear input fields after sending the message
+      setUsernameInput('');
+      setMessageInput('');
+    } catch (error) {
+      console.error('Error sending message:', error);
+      // Handle error scenario as needed
+    }
+  };
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
-
-  const handleSendMessage = () => {
-    // Placeholder function for sending a message
-    console.log('Sending message...');
-    // You can implement functionality to send the message here
-  };
 
   return (
     <div className="message-list-container">
@@ -89,10 +113,20 @@ const MessageList = ({}) => {
 
           {/* Text boxes for username and message */}
           <div>
-            <input type="text" placeholder="Enter your username" />
+            <input
+              type="text"
+              placeholder="Enter your username"
+              value={usernameInput}
+              onChange={(e) => setUsernameInput(e.target.value)}
+            />
           </div>
           <div>
-            <textarea rows="4" placeholder="Type your message"></textarea>
+            <textarea
+              rows="4"
+              placeholder="Type your message"
+              value={messageInput}
+              onChange={(e) => setMessageInput(e.target.value)}
+            ></textarea>
           </div>
 
           {/* Send Message button */}
