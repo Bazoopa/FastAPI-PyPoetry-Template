@@ -107,6 +107,28 @@ const MessageList = () => {
     }
   };
 
+  const handleDeleteChat = async () => {
+    if (!selectedChat) {
+      alert('Please select a chat to delete.');
+      return;
+    }
+
+    try {
+      const response = await axios.delete(`http://localhost:8000/api/v1/chat/${selectedChat.id}`);
+      console.log('Chat deleted successfully:', response.data);
+
+      // Remove the deleted chat from local state
+      setChats(chats.filter(chat => chat.id !== selectedChat.id));
+
+      // Clear selected chat and messages
+      setSelectedChat(null);
+      setMessages([]);
+    } catch (error) {
+      console.error('Error deleting chat:', error);
+      // Handle error scenario as needed
+    }
+  };
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -122,7 +144,7 @@ const MessageList = () => {
         ))}
       </div>
 
-      {/* New Chat button below the chat list */}
+      {/* New Chat section */}
       <div>
         <input
           type="text"
@@ -138,6 +160,8 @@ const MessageList = () => {
       {selectedChat && (
         <div className="message-display">
           <h2>Messages in Chat {selectedChat.name}</h2>
+
+          {/* Messages section */}
           {messages.length > 0 ? (
             <ul>
               {messages.map(message => (
@@ -150,7 +174,7 @@ const MessageList = () => {
             <p>No messages found</p>
           )}
 
-          {/* Text boxes for username and message */}
+          {/* Input fields for username and message */}
           <div>
             <input
               type="text"
@@ -168,8 +192,18 @@ const MessageList = () => {
             ></textarea>
           </div>
 
-          {/* Send Message button */}
-          <button onClick={handleSendMessage}>Send Message</button>
+          {/* Action buttons */}
+          <div>
+            {/* Send Message button */}
+            <button onClick={handleSendMessage}>Send Message</button>
+          </div>
+
+          <div>
+            {/* Delete Chat button */}
+            <button onClick={handleDeleteChat} style={{ marginTop: '10px' }}>
+              Delete Chat
+            </button>
+          </div>
         </div>
       )}
 
