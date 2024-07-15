@@ -6,15 +6,15 @@ from sqlalchemy.orm import Session
 from database.database_connection import get_db  # Adjust import as needed
 from endpoints.message import MessageSchema, MessageService
 
-# Configure logging settings (optional)
-logging.basicConfig(level=logging.DEBUG)  # Set the desired log level
+
+logging.basicConfig(level=logging.DEBUG)
 
 # Create database tables if they do not exist
 
 router = APIRouter()
 
 
-# Example of using get_db()
+
 @router.get("/message/{message_id}", response_model=MessageSchema.Message, tags=["Message"])
 def get_message(message_id: int, db: Session = Depends(get_db)):
     return MessageService.get_message(db, message_id=message_id)

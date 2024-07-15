@@ -8,6 +8,6 @@ class Chat(Base):
     __tablename__ = "chats"
 
     id = Column(Integer, primary_key=True)
-    name = Column(String(255), nullable=False, unique=True)  # Specify the length for VARCHAR
+    name = Column(String(255), nullable=False, unique=True)
 
     messages = relationship("Message", back_populates="chat", cascade="all, delete-orphan")
