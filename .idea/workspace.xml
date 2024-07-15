@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="Clicking on chats/ threads is now working">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="making a snapshot">
       <change beforePath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b23-react-building-3" />
+        <entry key="$PROJECT_DIR$" value="b24-react-building-4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +56,7 @@
     "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b24-react-building-4",
+    "git-widget-placeholder": "b25-react-adding-buttons",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
     "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
@@ -272,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721046449212</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="making a snapshot">
+      <option name="closed" value="true" />
+      <created>1721050558904</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721050558904</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -292,6 +299,7 @@
     <MESSAGE value="this should work" />
     <MESSAGE value="got rid of the part at the bottom I needed rid off" />
     <MESSAGE value="Clicking on chats/ threads is now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clicking on chats/ threads is now working" />
+    <MESSAGE value="making a snapshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="making a snapshot" />
   </component>
 </project>

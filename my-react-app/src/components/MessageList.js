@@ -1,79 +1,79 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const MessageList = ({ chatId }) => {
   const [chatName, setChatName] = useState('');
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const fetchChatNameAndMessages = async () => {
-      if (chatId) {
-        setIsLoading(true);
-
-        try {
-          // Fetch chat name
-          const chatResponse = await axios.get(`http://localhost:8000/api/v1/chat/${chatId}`);
-          if (chatResponse.data && chatResponse.data.name) {
-            setChatName(chatResponse.data.name);
-          } else {
-            setChatName('');
-          }
-
-          // Fetch messages
-          const messagesResponse = await axios.get(`http://localhost:8000/api/v1/messages/${chatId}`);
-          setMessages(messagesResponse.data);
-
-          setIsLoading(false);
-        } catch (error) {
-          console.error('Error fetching data:', error);
+    const fetchChatName = async () => {
+      try {
+        const response = await axios.get(`http://localhost:8000/api/v1/chat/${chatId}`);
+        if (response.data && response.data.name) {
+          setChatName(response.data.name);
+        } else {
           setChatName('');
-          setMessages([]);
-          setIsLoading(false);
         }
-      } else {
+      } catch (error) {
+        console.error('Error fetching chat name:', error);
         setChatName('');
-        setMessages([]);
-        setIsLoading(false);
       }
     };
 
-    fetchChatNameAndMessages();
+    fetchChatName();
   }, [chatId]);
 
-  // Display loading indicator while fetching data
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  const fetchMessages = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const response = await axios.get(`http://localhost:8000/api/v1/messages/${chatId}`);
+      setMessages(response.data);
+    } catch (error) {
+      console.error('Error fetching messages:', error);
+      setError('Error fetching messages. Please try again.');
+      setMessages([]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-  // Display messages if chatId is valid and messages are present
-  if (chatId && messages.length > 0) {
-    return (
-      <div>
-        <h2>Messages in Chat {chatName}</h2>
-        <ul>
-          {messages.map(message => (
-            <li key={message.id}>
-              <strong>{message.username}</strong>: {message.message}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+    if (!isOpen) {
+      fetchMessages();
+    }
+  };
 
-  // Display message when there are no messages for the selected chat
-  if (chatId && messages.length === 0) {
-    return (
-      <div>
-        <h2>Messages in Chat {chatName}</h2>
-        <p>No messages found</p>
-      </div>
-    );
-  }
-
-  // Default case: No chat selected message should not appear if chatId is falsy
-  return null;
+  return (
+    <div>
+      <button onClick={toggleOpen}>{isOpen ? 'Close' : 'Open'} Messages for {chatName}</button>
+      {isOpen && (
+        <div>
+          {isLoading ? (
+            <div>Loading...</div>
+          ) : messages.length > 0 ? (
+            <div>
+              <h2>Messages in Chat {chatName}</h2>
+              <ul>
+                {messages.map(message => (
+                  <li key={message.id}>
+                    <strong>{message.username}</strong>: {message.message}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <p>No messages found</p>
+          )}
+          {error && <p>{error}</p>}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default MessageList;
