@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="some docker updates. Now just have to update the readme, and open ports for tomorrow. maybe also need to do some refactoring">
+    <list default="true" id="896809e1-6c1e-4799-9dda-d69e6b7d5805" name="Changes" comment="final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-fastapi-app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-fastapi-app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-react-app/src/components/MessageList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="b30-testing-some-edge-cases" />
+        <entry key="$PROJECT_DIR$" value="b31-docker-updates" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for test_main.test_create_chat.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "b31-docker-updates",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_main.test_create_chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;b32-final-updates&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bruce/PycharmProjects/FastAPI-PyPoetry-Template&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Bruce\PycharmProjects\FastAPI-PyPoetry-Template\my-fastapi-app" />
@@ -355,13 +353,35 @@
       <option name="project" value="LOCAL" />
       <updated>1721070998459</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="small updates for tomorrow">
+      <option name="closed" value="true" />
+      <created>1721085752770</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1721085752770</updated>
+    </task>
+    <task id="LOCAL-00029" summary="small updates for tomorrow">
+      <option name="closed" value="true" />
+      <created>1721085922939</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1721085922939</updated>
+    </task>
+    <task id="LOCAL-00030" summary="final">
+      <option name="closed" value="true" />
+      <created>1721086017933</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1721086017933</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating the YML file etc" />
-    <MESSAGE value="updating the YML file to change working directory to myApp before it runs the tests" />
     <MESSAGE value="updated the database.py file for lazy connections" />
     <MESSAGE value="test to see if default variables will solve the test failing problem" />
     <MESSAGE value="Found the testing_db problem, now creating new branch to fix" />
@@ -385,6 +405,8 @@
     <MESSAGE value="Delete functionality is now working" />
     <MESSAGE value="Mostly finished, now to get it working with docker and then on to azure" />
     <MESSAGE value="some docker updates. Now just have to update the readme, and open ports for tomorrow. maybe also need to do some refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="some docker updates. Now just have to update the readme, and open ports for tomorrow. maybe also need to do some refactoring" />
+    <MESSAGE value="small updates for tomorrow" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
 </project>
