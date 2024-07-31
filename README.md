@@ -4,6 +4,12 @@ A template for other FastAPI projects so I can create new projects quickly.
 This template will just have a database and endpoints that can be accessed by a client like
 postman
 
+# Connection address
+
+The connection address is subject to change, whenever it does change the new address can be found below:
+
+http://bruce.installation00.net:3000/
+
 # Design
 
 Current setup:
