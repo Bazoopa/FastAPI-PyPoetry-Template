@@ -13,7 +13,6 @@ logger = logging.getLogger(__name__)
 
 # Establish MySQL connection using mysql.connector with SSL
 def create_mysql_connection():
-    """Create MySQL connection using mysql.connector with SSL."""
     try:
         cnx = mysql.connector.connect(
             user=DATABASE["username"],
@@ -32,15 +31,11 @@ def create_mysql_connection():
 
 
 def get_engine():
-    """Create SQLAlchemy engine."""
     return create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
 
 
 # Create a sessionmaker to interact with the database
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=get_engine())
-
-
-# Declare a base class for ORM models
 
 
 # Dependency to provide a database session
