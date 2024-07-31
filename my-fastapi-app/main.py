@@ -15,6 +15,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000",
                    "http://92.26.154.79",
+                   "http://89.243.41.224",
+                   "https://bruce.installation00.net",
                    "*"],  # Adjust based on your frontend URL
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
